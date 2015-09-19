@@ -16,4 +16,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'user'
+rootProject.name = 'boot-app'

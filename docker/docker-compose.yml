@@ -1,5 +1,5 @@
 web:  
-  image: user
+  image: boot-app
   ports:
     - "9080:9080"
   links:
