@@ -1,0 +1,13 @@
+server:
+  port: 9080
+spring:
+  datasource:
+    url: jdbc:mysql://172.17.42.1:3306/demo_cloud
+    username: demo_cloud
+    password: demo_cloud
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+flyway:
+  initOnMigrate: true

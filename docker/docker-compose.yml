@@ -1,0 +1,17 @@
+web:  
+  image: user
+  ports:
+    - "9080:9080"
+  links:
+    - mysql
+mysql:
+  image: mysql/mysql-server
+  expose:
+    - "3306"
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_DATABASE: demo_cloud
+    MYSQL_USER: demo_cloud
+    MYSQL_PASSWORD: demo_cloud
+    MYSQL_ROOT_PASSWORD: admin123
